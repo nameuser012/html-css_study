@@ -1,0 +1,29 @@
+.maintitle {
+    display: flex;
+    justify-content: center;
+}
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.products > .product {
+    width: 150px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    border: 5px solid black;
+}
+
+hr {
+    margin: 20px;
+}

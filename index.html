@@ -5,13 +5,62 @@
         <meta name="viewport"
             content="width=device-width, initial-scale=1.0">
 
-            <title>html/css 연습 day1</title>
+            <title>Selector 연습 day3</title>
+
+            <style>
+                p {
+                    color: red;
+                }
+
+                .blue {
+                    color: blue;
+                }
+
+                #title {
+                    color: green;
+                    width: 200px;
+                    height: 100px;
+                    background-color: lightblue;
+                    padding: 20px;
+                    border: 5px solid black;
+                    margin: 20px;
+                }
+
+                div p {
+                    color: yellow;
+                }
+
+                div > p {
+                    font-size: 30px;
+                }
+
+                span {
+                    display: inline-block;
+                    color: aqua;
+                    width: 150px;
+                    height: 25px;
+                    border: 5px solid black;
+                    margin: 10px;
+                }
+                section > div {
+                    display: inline-block;
+                }
+                .container {
+                    display: flex;
+                    justify-content: center;
+                    gap: 20px;
+                    flex-wrap: wrap; 
+                }
+                .container > div {
+                    flex: 1;
+                }
+            </style>
     </head>
 
     <body>
-        <h1>introduce myself</h1>
+        <h1 id="title">introduce myself</h1>
 
-        <p>안녕하세요.<br>
+        <p class="blue">안녕하세요.<br>
         <span>컴퓨터공학과 재학 중</span>인 학생입니다.
         </p>
 
@@ -37,5 +86,23 @@
             <a href="about.html">정보 페이지로 이동</a>
         </p>
 
+        <div>
+        <p>div 바로 아래 p</p>
+
+        <section>
+            <p>section 안의 p</p>
+            <div>div1</div>
+            <div>div2</div>
+            <div>div3</div>
+
+        </section>
+        
+    </div>
+
+    <div class="container">
+        <div>divN1</div>
+        <div>divN2</div>
+        <div>divN3</div>
+    </div>
     </body>
 </html>
